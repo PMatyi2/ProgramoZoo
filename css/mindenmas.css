@@ -1,0 +1,164 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-weight: bold;
+}
+
+
+#page1{
+  margin-bottom: 100px;
+  background-color: rgb(250,128,114); 
+}
+#page2{
+  margin-bottom: 100px;
+  background-color: rgb(222,184,135);
+}
+#page3{
+  margin-bottom: 100px;
+  background-color: rgb(34,139,34);
+}
+#page4{
+  margin-bottom: 100px;
+  background-color:   rgb(135,206,235);
+}
+#page5{
+  margin-bottom: 100px;
+  background-color: rgb(218,165,32);
+}
+#page6{
+  margin-bottom: 100px;
+  background-color: rgb(230,230,250);
+}
+#page7{
+  margin-bottom: 100px;
+  background-color: rgb(65,105,225);
+}
+#page8{
+  margin-bottom: 100px;
+  background-color: rgb(255,182,193);
+}
+
+iframe {
+    margin: auto;
+    display: block;
+   }
+
+
+
+#background1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url(../background.jpg);
+    background-size: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+/*iframe aspect ratio wrapper*/
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+}
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+/*iframe aspect ratio wrapper end*/
+
+/*kepek/aranyok/margok*/
+.logo {
+  width: 48px;
+  height: 40px;
+  /*filter: invert(100%);*/
+  z-index: 10;
+}
+
+.kapcsolatkep img{
+  height: 100px;
+  width: auto;
+  margin: 10px;
+}
+
+}
+.page-scroll{
+  font-size: 20px;
+  /*color: white !important;*/
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #222222; 
+  color: #9d9d9d !important;
+  text-align: center;
+}
+
+
+a:link, 
+a:visited, 
+a:active{
+color: #9d9d9d;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/*kis ikon, mobilon dropdown*/
+#menuikon{
+  display: none; 
+}
+
+@media (max-width: 767px) {
+  
+  #menuikon{
+  display: block;
+  float: right;
+  /*font-size: 50px;*/
+  text-align: right;
+  width: 100%;
+    }
+
+  .navbar {
+    padding: 10px 0px 10px 0px;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    
+   p, h1, h3{
+   font-size: 80% !important;
+   word-wrap: break-word;
+  }
+
+}
+
+/*top navbar mobilon dropdown*/
+
+.dropdown-toggle {
+  width: 100% !important;
+}
+
